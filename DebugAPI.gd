@@ -1,6 +1,7 @@
 # DebugAPI.gd - Singleton global
-# REMOVE class_name IF WANT LOAD ON AUTOLOADS (GLOBALS IN GODOT 4.X)
-class_name DebugAPI extends Node
+# ADD class_name IF WANT USE BY INSTANCES AND NOT BY AUTOLOADS (GLOBALS IN GODOT 4.X)
+# class_name DebugAPI
+extends Node
 
 signal panel_registered(panel_name: String)
 signal panel_unregistered(panel_name: String)
